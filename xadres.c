@@ -35,14 +35,14 @@ void moverRainha(int casas) {
 // Movimento do CAVALO com loops aninhados complexos
 // -------------------------------
 void moverCavalo() {
-    int movimentos = 1; // Quantidade de "L" a serem feitos
+    int movimentos = 1; 
     printf("\nMovimento do Cavalo (2 casas para Cima, 1 para Direita):\n");
 
     for (int m = 0; m < movimentos; m++) {
         int vertical = 0;
         for (int i = 0; i < 3; i++) {
-            if (i == 2) break;  // interrompe antes da terceira repetição
-            if (i % 2 == 1) continue;  // pula se for a segunda (i == 1)
+            if (i == 2) break; 
+            if (i % 2 == 1) continue; 
             printf("Cima\n");
             vertical++;
         }
@@ -59,9 +59,9 @@ void moverCavalo() {
 // Função principal
 // -------------------------------
 int main() {
-    // Quantidade de casas a se mover
+    
     int casasTorre = 5;
-    int casasBispo = 1; // 1 vez vertical com 5 horizontais (1x5)
+    int casasBispo = 1; 
     int casasBispoHorizontal = 5;
     int casasRainha = 8;
 
